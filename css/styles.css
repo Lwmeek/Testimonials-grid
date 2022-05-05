@@ -94,9 +94,37 @@ p {
 	color: var(--clr-white);
 	max-width: 71ch;
 }
-.daniel .quotes {
-	z-index: 1;
-	position: absolute;
-	top: 0;
-	left: 50rem;
+
+/*Jonathan*/
+
+.jonathan{
+	background: var(--clr-vdark-grayish-blue);
+}
+.jonathan h2, .jonathan .verified, .jonathan .paragraph, .jonathan h1{
+	color: var(--clr-white);
+}
+.jonathan h2{
+	max-width: 20ch;
+}
+.jonathan .paragraph{
+	max-width: 29ch;
+}
+
+/*Kira*/
+
+
+
+/*Jeanette*/
+
+.jeanette{
+	background: var(--clr-white);
+}
+.jeanette h1, .jeanette .verified, .jeanette h2, .jeanette .paragraph{
+	color: var(--clr-vdark-grayish-blue);
+}
+.jeanette h2{
+	max-width: 18ch;
+}
+.jeanette .paragraph{
+	max-width: 30ch;
 }
