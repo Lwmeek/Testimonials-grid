@@ -1,0 +1,102 @@
+:root {
+	--clr-moderate-violet: rgba(117, 65, 200, 1);
+	--clr-vdark-grayish-blue: hsl(217, 19%, 35%);
+	--clr-vdark-blackish-blue: hsl(219, 29%, 14%);
+	--clr-white: rgba(255, 255, 255, 1);
+	--clr-light-gray: hsl(0, 0%, 81%);
+	--clr-light-grayish-blue: hsl(210, 46%, 95%);
+}
+/*1. "Verified Graduate" has the same color as the person's name 
+with 50% opacity
+2. Review paragraphs inside the quotations have the same color as 
+well, but are at 70% opacity*/
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.3rem;
+	font-family: "Barlow Semi Condensed", sans-serif;
+	background: var(--clr-light-grayish-blue);
+}
+.card {
+	border-radius: 10px;
+	padding: 2rem;
+}
+.card h2,
+.paragraph {
+	margin-bottom: 2rem;
+}
+h2 {
+	line-height: 2.5rem;
+	font-size: 2rem;
+}
+p {
+	line-height: 2rem;
+}
+
+/* General User Content*/
+
+.profile-pic_primary {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.profile-pic_secondary {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+	border: 2px solid var(--clr-moderate-violet);
+}
+.profile-pic_accent {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+}
+.user-info {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+.user-info h1 {
+	font-size: 1.5rem;
+}
+.user-info h1,
+.verified {
+	margin: 0.3rem;
+}
+.verified {
+	opacity: 50%;
+}
+.paragraph {
+	opacity: 70%;
+}
+
+/*Daniel*/
+
+.daniel {
+	background: var(--clr-moderate-violet);
+	background-image: url(/images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: 80% 0;
+}
+.daniel h1 {
+	color: var(--clr-white);
+}
+.daniel .verified {
+	color: var(--clr-white);
+}
+.daniel h2 {
+	color: var(--clr-white);
+	max-width: 47ch;
+}
+.daniel .paragraph {
+	color: var(--clr-white);
+	max-width: 71ch;
+}
+.daniel .quotes {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 50rem;
+}
