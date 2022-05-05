@@ -112,7 +112,18 @@ p {
 
 /*Kira*/
 
-
+.kira{
+	background: var(--clr-white);
+}
+.kira h1, .kira h2, .kira.verified, .kira .paragraph{
+	color: var(--clr-vdark-grayish-blue);
+}
+.kira h2{
+	max-width: 20ch;
+}
+.kira .paragraph{
+	max-width: 29ch;
+}
 
 /*Jeanette*/
 
@@ -127,4 +138,19 @@ p {
 }
 .jeanette .paragraph{
 	max-width: 30ch;
+}
+
+/*Patrick*/
+
+.patrick{
+	background: var(--clr-vdark-blackish-blue);
+}
+.patrick h1, .patrick h2, .patrick .paragraph, .patrick .verified{
+	color: var(--clr-white);
+}
+.patrick h2{
+	max-width: 47ch;
+}
+.patrick .paragraph{
+	max-width: 70ch;
 }
