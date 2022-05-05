@@ -14,13 +14,17 @@ html {
 	font-size: 62.5%;
 }
 body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 1.3rem;
 	font-family: "Barlow Semi Condensed", sans-serif;
 	background: var(--clr-light-grayish-blue);
 }
 .card {
 	border-radius: 10px;
-	padding: 2rem;
+	padding: 1.5rem 4rem;
 }
 .card h2,
 .paragraph {
@@ -33,24 +37,31 @@ h2 {
 p {
 	line-height: 2rem;
 }
+main {
+	width: 80%;
+	display: grid;
+	gap: 2.5rem;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+}
 
 /* General User Content*/
 
 .profile-pic_primary {
-	width: 5rem;
-	height: 5rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 100%;
 	border: 2px solid rgba(255, 255, 255, 0.5);
 }
 .profile-pic_secondary {
-	width: 5rem;
-	height: 5rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 100%;
 	border: 2px solid var(--clr-moderate-violet);
 }
 .profile-pic_accent {
-	width: 5rem;
-	height: 5rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 100%;
 }
 .user-info {
@@ -75,6 +86,7 @@ p {
 /*Daniel*/
 
 .daniel {
+	grid-area: 1/ 1 / span 1 / span 2;
 	background: var(--clr-moderate-violet);
 	background-image: url(/images/bg-pattern-quotation.svg);
 	background-repeat: no-repeat;
@@ -97,60 +109,76 @@ p {
 
 /*Jonathan*/
 
-.jonathan{
+.jonathan {
+	grid-area: 1/3 / span 1;
 	background: var(--clr-vdark-grayish-blue);
 }
-.jonathan h2, .jonathan .verified, .jonathan .paragraph, .jonathan h1{
+.jonathan h2,
+.jonathan .verified,
+.jonathan .paragraph,
+.jonathan h1 {
 	color: var(--clr-white);
 }
-.jonathan h2{
+.jonathan h2 {
 	max-width: 20ch;
 }
-.jonathan .paragraph{
+.jonathan .paragraph {
 	max-width: 29ch;
 }
 
 /*Kira*/
 
-.kira{
+.kira {
+	grid-area: 1/4 / span 2;
 	background: var(--clr-white);
 }
-.kira h1, .kira h2, .kira.verified, .kira .paragraph{
+.kira h1,
+.kira h2,
+.kira.verified,
+.kira .paragraph {
 	color: var(--clr-vdark-grayish-blue);
 }
-.kira h2{
+.kira h2 {
 	max-width: 20ch;
 }
-.kira .paragraph{
+.kira .paragraph {
 	max-width: 29ch;
 }
 
 /*Jeanette*/
 
-.jeanette{
+.jeanette {
+	grid-area: 2/1 / span 1;
 	background: var(--clr-white);
 }
-.jeanette h1, .jeanette .verified, .jeanette h2, .jeanette .paragraph{
+.jeanette h1,
+.jeanette .verified,
+.jeanette h2,
+.jeanette .paragraph {
 	color: var(--clr-vdark-grayish-blue);
 }
-.jeanette h2{
+.jeanette h2 {
 	max-width: 18ch;
 }
-.jeanette .paragraph{
+.jeanette .paragraph {
 	max-width: 30ch;
 }
 
 /*Patrick*/
 
-.patrick{
+.patrick {
+	grid-area: 2/2 / span 1 / span 2;
 	background: var(--clr-vdark-blackish-blue);
 }
-.patrick h1, .patrick h2, .patrick .paragraph, .patrick .verified{
+.patrick h1,
+.patrick h2,
+.patrick .paragraph,
+.patrick .verified {
 	color: var(--clr-white);
 }
-.patrick h2{
+.patrick h2 {
 	max-width: 47ch;
 }
-.patrick .paragraph{
+.patrick .paragraph {
 	max-width: 70ch;
 }
